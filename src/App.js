@@ -12,13 +12,13 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <Link to="/pages/" component={ Login } />
-        <Link to="/pages/search" component={ Search } />
-        <Link to="/pages/album/:id" component={ Album } />
-        <Link to="/pages/favorites" component={ Favorites } />
-        <Link to="/pages/profile" component={ Profile } />
-        <Link to="/pages/profile/edit" component={ ProfileEdit } />
-        <Link to="/pages/NotFound" component={ NotFound } />
+        <Link to="/" component={ Login } />
+        <Link to="/search" component={ Search } />
+        <Link to="/album/:id" component={ Album } />
+        <Link to="/favorites" component={ Favorites } />
+        <Link to="/profile" component={ Profile } />
+        <Link to="/profile/edit" component={ ProfileEdit } />
+        <Link to="/NotFound" component={ NotFound } />
       </BrowserRouter>
     );
   }
