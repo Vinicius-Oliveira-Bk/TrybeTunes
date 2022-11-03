@@ -16,9 +16,9 @@ class App extends React.Component {
         <Link to="/pages/search" component={ Search } />
         <Link to="/pages/album/:id" component={ Album } />
         <Link to="/pages/favorites" component={ Favorites } />
-        <Link to="/src/pages/profile" component={ Profile } />
-        <Link to="/src/pages/profile/edit" component={ ProfileEdit } />
-        <Link to="/src/pages/NotFound" component={ NotFound } />
+        <Link to="/pages/profile" component={ Profile } />
+        <Link to="/pages/profile/edit" component={ ProfileEdit } />
+        <Link to="/pages/NotFound" component={ NotFound } />
       </BrowserRouter>
     );
   }
