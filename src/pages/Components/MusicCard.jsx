@@ -7,7 +7,6 @@ export default class MusicCard extends Component {
   state = {
     inLoading: false,
     favorites: [],
-    favoriteSave: false,
   };
 
   async componentDidMount() {
@@ -19,13 +18,6 @@ export default class MusicCard extends Component {
       inLoading: false,
       favorites: [favoritesSongs],
     });
-    const { favorites } = this.state;
-    const { element, trackId } = this.props;
-    if (favorites.includes(element.trackId) === trackId) {
-      this.setState({
-        favoriteSave: true,
-      });
-    }
   }
 
   addFavorties = async (song) => {
@@ -46,7 +38,8 @@ export default class MusicCard extends Component {
       trackId,
       element,
     } = this.props;
-    const { inLoading, favoriteSave } = this.state;
+    const { inLoading, favorites } = this.state;
+    console.log(favorites);
     return (
       <div>
         {
