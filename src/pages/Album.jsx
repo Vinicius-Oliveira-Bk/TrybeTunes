@@ -41,12 +41,17 @@ export default class Album extends Component {
         <h3 data-testid="album-name">{ collectionName }</h3>
         {
           requestMusics.map((element) => (
-            <MusicCard
-              key={ element.trackNumber }
-              trackName={ element.trackName }
-              previewUrl={ element.previewUrl }
-              trackNumber={ element.trackNumber }
-            />
+            <>
+              <MusicCard
+                key={ element.trackNumber }
+                trackId={ element.trackId }
+                trackName={ element.trackName }
+                previewUrl={ element.previewUrl }
+                trackNumber={ element.trackNumber }
+                element={ element }
+              />
+              <br />
+            </>
           ))
         }
       </div>
