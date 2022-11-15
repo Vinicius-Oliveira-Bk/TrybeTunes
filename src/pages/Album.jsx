@@ -10,7 +10,7 @@ export default class Album extends Component {
     requestAlbum: [],
   };
 
-  componentDidMount() {
+  async componentDidMount() {
     this.fetchAPI();
   }
 
